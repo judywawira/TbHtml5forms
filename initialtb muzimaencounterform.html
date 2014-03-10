@@ -10,13 +10,13 @@
     <script src="js/additional-methods.min.js"></script>
     <script src="js/muzima.js"></script>
 
-    <title>Dispensary Form</title>
+    <title>Initial TB encounter form</title>
 </head>
 <body class="col-md-8 col-md-offset-2">
 <div id="pre_populate_data"></div>
 <form id="dispensary_form" name="dispensary_form">
 
-<h2 class="text-center">Dispensary Confirmation Form</h2>
+<h2 class="text-center">Initial TB Encounter Form</h2>
 
 <div class="section">
     <h3>Demographics</h3>
@@ -63,7 +63,7 @@
     <h3>Encounter Details</h3>
 
     <div class="form-group">
-        <label for="encounter.location_id">Name of Dispensary:<span class="required">*</span></label>
+        <label for="encounter.location_id">Name of Location:<span class="required">*</span></label>
         <input class="form-control" id="encounter.location_id" type="text" placeholder="Start typing something...">
         <input class="form-control" name="encounter.location_id" type="hidden">
     </div>
@@ -89,3 +89,2042 @@
         <input class="form-control" id="encounter.form_uuid" name="encounter.form_uuid"
                type="hidden" required="required">
     </div>
+	<div class="section">
+    <h3>Type Of TB </h3>
+    <label>The type of TB</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Pulmonary</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">ExtraPulmonary</label><br>
+            
+        </fieldset>
+    </div>
+	</div>
+	<div class="section">
+   
+    <label>If Extra pulmonary TB, specify the type of EPTB</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Pleural effusion</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Lymph Nodes</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Skeletal (joint, bone, spine)</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Miliary</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Meningitis</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Abdominal</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Other specify</label><br>
+            
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>If Pulmonary TB, select appropriate</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Smear Positive</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Smear Negative</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Smear not done (&gt;15 years)</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Smear not done (&lt;15 years)</label><br>
+			    
+            
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Type Of Patient</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">New, Smear Positive</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">New, Smear Negative</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Smear Positive, Relapse</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Smear Negative Relapse</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Retreatment after defaulting</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Failure</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> New, extra pulmonary</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Extra pulmonary relapse</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Transfer in</label><br>
+			    
+            
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+       <div class="form-group menstrualPeriod">
+        <label for="obs.last_menstrual_period_qualitative">DOT Provided By
+            </label>
+        <select class="form-control" id="obs.last_menstrual_period_qualitative"
+                name="obs.last_menstrual_period_qualitative"
+                data-concept="7048^LAST MENSTRUAL PERIOD, QUALITATIVE^99DCT">
+            <option value="">...</option>
+            <option value="7049^LESS THAN 35 DAYS^99DCT">Health care worker</option>
+            <option value="7050^MORE THAN 35 DAYS^99DCT"> Household member, friend, relative</option>
+            <option value="1624^DO NOT KNOW^99DCT"> Community Volunteer</option>
+			 <option value="1624^DO NOT KNOW^99DCT"> Not Done</option>
+        </select>
+    </div>
+</div>
+<div class="section">
+       <div class="form-group menstrualPeriod">
+        <label for="obs.last_menstrual_period_qualitative">Reffered By
+            </label>
+        <select class="form-control" id="obs.last_menstrual_period_qualitative"
+                name="obs.last_menstrual_period_qualitative"
+                data-concept="7048^LAST MENSTRUAL PERIOD, QUALITATIVE^99DCT">
+            <option value="">...</option>
+            <option value="7049^LESS THAN 35 DAYS^99DCT">VCT center</option>
+            <option value="7050^MORE THAN 35 DAYS^99DCT"> HIV Clinic</option>
+            <option value="1624^DO NOT KNOW^99DCT"> STI Clinic</option>
+			<option value="1624^DO NOT KNOW^99DCT"> home based care</option>
+			<option value="1624^DO NOT KNOW^99DCT">  Private sector</option>
+			<option value="1624^DO NOT KNOW^99DCT">ANC</option>
+			<option value="1624^DO NOT KNOW^99DCT"> Chemist/Pharmacist</option>
+			<option value="1624^DO NOT KNOW^99DCT">  PMTCT</option>
+			<option value="1624^DO NOT KNOW^99DCT">  Self Refferal</option>
+			<option value="1624^DO NOT KNOW^99DCT">  Contact Invitation</option>
+			<option value="1624^DO NOT KNOW^99DCT">  Cough Monitor</option>
+			<option value="1624^DO NOT KNOW^99DCT">  Community Health Worker</option>
+						
+			
+			 
+        </select>
+    </div>
+</div>
+<div class="section">
+
+        <div class="form-group">
+            <label for="return_visit_date">Start Date of Treatment<span class="required">*</span></label>
+            <input class="form-control datepicker"  id="return_visit_date"
+                   name="return_visit_date" data-concept="5096^RETURN VISIT DATE^99DCT"
+                   type="text" required="required">
+        </div>
+    </div>
+<div class="section">
+   
+    <label>Regimens</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">2RHZE/6EH</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">2RHZ/6EH</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">2SRHZE/1RHZE/5RHE</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">2RHZ/4RH(children &lt;15 yrs)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> 2RFBHZE/4RFBH</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Other specify</label><br>
+			
+			    
+            
+        </fieldset>
+    </div>
+	<div class="form-group">
+            <label for="freetext_general">Other Specify</label>
+            <textarea class="form-control" name="freetext_general" id="freetext_general"
+                      data-concept="1915^FREETEXT GENERAL^99DCT"
+                      placeholder="Provider notes/comments."></textarea>
+        </div>
+</div>
+<div class="section">
+   
+    <label>Is Patient Pregnant</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Yes</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">No</label><br>
+			          
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Current TB Medications</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> None</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Rifafour(RHZE)</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Rifater(RHZ)</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">3-FDC(RHE)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  Ethizide(EH)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Rifinah(RH)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Rifampicin(R)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  INH(H)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  Pyrazinamide(Z)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  Ethambutol(E)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  Streptomycin(S)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Rifabutin(RFB)</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">  Other specify</label><br>
+		         
+        </fieldset>
+    </div>
+	<div class="form-group">
+            <label for="freetext_general">Other Specify</label>
+            <textarea class="form-control" name="freetext_general" id="freetext_general"
+                      data-concept="1915^FREETEXT GENERAL^99DCT"
+                      placeholder="Provider notes/comments."></textarea>
+        </div>
+</div>
+<div class="section">
+   
+    <label>During the last month has the patient missed any TB medications?</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Yes</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">No</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Not Applicable</label><br>
+			          
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Drugs Missed</label>
+
+    <div class="control-group">
+  <label class="control-label" for="textarea">Drugs Missed</label>
+  <div class="controls">                     
+    <textarea id="textarea" name="textarea">default text</textarea>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="textarea">Reason(s)</label>
+  <div class="controls">                     
+    <textarea id="textarea" name="textarea">default text</textarea>
+  </div>
+</div>
+</div>
+<div class="section">
+   
+    <label>During the last seven days how many TB pills did the patient take?</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">None</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Few</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Half</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">All</label><br>
+			          
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Any Side Effects attributable to current medications? </label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Yes</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">No</label><br>
+			
+        </fieldset>
+    </div>
+	<div class="control-group">
+  <label class="control-label" for="textarea">If yes, Drugs </label>
+  <div class="controls">                     
+    <textarea id="textarea" name="textarea">If yes, Drugs </textarea>
+  </div>
+</div>
+</div>
+<div class="section">
+   
+    <label>If Yes, tick all S/E</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">  Hepatitis</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Jaundice</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Decreased urine output</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Rash</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> IRIS</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Steven Johnson Syndrome</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Visual Impairment</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Neuropathy</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Taste changes</label><br>
+					         
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Action taken for S/E</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">  Dose not changed</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Dose reduced</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Drug Withdrawn</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Patient Hospitalized</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Drug Added to treat SE</label><br>
+			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">All drugs stopped</label><br>
+			
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   <label class="control-label" for="textinput">BP</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" required="" type="text">
+    <p class="help-block">----/----</p>
+  </div>
+   
+    
+</div>
+<div class="section">
+  <label class="control-label" for="textinput">Temp 0C	</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <div class="form-group">
+        <label for="weight_kg">Weight (KG):</label>
+        <input class="form-control" id="weight_kg" name="weight_kg" type="text"
+               placeholder="Please record today's weight"
+               data-concept="5089^WEIGHT (KG)^99DCT">
+   
+    
+</div>
+<div class="form-group">
+        <label for="height_cm">Height (CM):</label>
+        <input class="form-control" id="height_cm" name="height_cm" type="text"
+               placeholder="Please record today's height"
+               data-concept="5090^HEIGHT (CM)^99DCT">
+    </div>
+	<div class="form-group bodyMassIndex">
+        <label for="obs.body_mass_index">Body Mass Index:</label>
+        <input class="form-control" id="obs.body_mass_index" name="obs.body_mass_index" type="text" readonly="readonly"
+               data-concept="1342^BODY MASS INDEX^99DCT">
+</div>
+<label class="control-label" for="textinput">HR </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <label class="control-label" for="textinput">RR	</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <label class="control-label" for="textinput">SaO2</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+ </div>
+ <div class="section">
+   
+    <label>General exam </label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">   Pale</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Jaundice</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Wasted</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide"> Edema</label><br>
+			            				         
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Resp</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Normal</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Abdnormal</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Not Done</label><br>
+            
+            				         
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>Abdomen</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Normal</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Abdnormal</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Not Done</label><br>
+            
+            				         
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   
+    <label>CNS</label>
+
+    <div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Normal</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Abdnormal</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Not Done</label><br>
+            
+            				         
+        </fieldset>
+    </div>
+</div>
+<div class="section">
+   <h3>LABS</h3>
+    <label>Sputum Month</label>
+ <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <div class="section">
+    <div class="form-group">
+        <label for="obs.return_visit_date">Date Of Test:</label>
+        <input class="form-control datepicker checkFutureDate" data-concept="5096^RETURN VISIT DATE^99DCT"
+               id="obs.return_visit_date" name="obs.return_visit_date" type="text"
+               readonly="readonly">
+    </div>
+	<div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Normal</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Abdnormal</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Not Done</label><br>
+            
+            				         
+        </fieldset>
+    </div>
+	<div class="form-group">
+	<label for="obs.return_visit_date">Date Of Test:</label>
+        <input class="form-control datepicker checkFutureDate" data-concept="5096^RETURN VISIT DATE^99DCT"
+               id="obs.return_visit_date" name="obs.return_visit_date" type="text"
+               readonly="readonly">
+			   </div>
+	<div class="form-group">
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">1+</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">2+</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">3+</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Negative</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Not Done</label><br>
+			
+            
+            				         
+        </fieldset>
+    </div>
+   
+</div>
+ <div class="section">
+ 
+	<div class="form-group">
+	<label for="obs.return_visit_date">Date Of Test:</label>
+        <input class="form-control datepicker checkFutureDate" data-concept="5096^RETURN VISIT DATE^99DCT"
+               id="obs.return_visit_date" name="obs.return_visit_date" type="text"
+               readonly="readonly">
+			   </div>
+			   <div class="control-group">
+  <label class="control-label" for="textinput">Sputum serial number</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+
+</div>
+</div>
+
+<div class="section">
+<div class="control-group">
+  <label class="control-label" for="textinput">GeneXpert </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+
+</div>
+
+ <div class="section">
+ 
+	<div class="form-group">
+	<label for="obs.return_visit_date">Date Of Test:</label>
+        <input class="form-control datepicker checkFutureDate" data-concept="5096^RETURN VISIT DATE^99DCT"
+               id="obs.return_visit_date" name="obs.return_visit_date" type="text"
+               readonly="readonly">
+			   </div>
+			   <div class="form-group">
+			   <label class="control-label" for="radios">Sputum Culture and sensitivity (Sensitive/resistant) </label>
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Yes</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Not Done</label><br>
+			<input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin"> Done No results</label><br>
+			    
+            				         
+        </fieldset>
+    </div>
+
+</div>
+ <div class="section">
+ 
+	 <div class="form-group">
+			   <label class="control-label" for="radios">Streptomycin</label>
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Sensitive</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Resistant</label><br>
+			    
+            				         
+        </fieldset>
+    </div>
+
+</div>
+ <div class="section">
+ 
+	 <div class="form-group">
+			   <label class="control-label" for="radios">Rifampicin</label>
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Sensitive</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Resistant</label><br>
+			    
+            				         
+        </fieldset>
+    </div>
+
+</div>
+<div class="section">
+ 
+	 <div class="form-group">
+			   <label class="control-label" for="radios">Ethambutol</label>
+        <fieldset name="obs.tmp_drugs">
+            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
+            <label for="obs.tmp_drugs.Metformin">Sensitive</label><br>
+            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
+            <label for="obs.tmp_drugs.Glibenclamide">Resistant</label><br>
+			    
+            				         
+        </fieldset>
+    </div>
+
+</div>
+<div class="section">
+ 
+	 <div class="form-group">
+		    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <label class="control-label" for="textinput">SGOT</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+  <div class="control-group">
+  <label class="control-label" for="textinput">Haemogram  WBC </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">HB</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Platelets </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">MCV</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Creatinine</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="radios">HIV Test</label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Positive" checked="checked" type="radio">
+      Positive
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input name="radios" id="radios-1" value="Negative" type="radio">
+      Negative
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input name="radios" id="radios-2" value="Unknown" type="radio">
+      Unknown
+    </label>
+    <label class="radio inline" for="radios-3">
+      <input name="radios" id="radios-3" value="Declined" type="radio">
+      Declined
+    </label>
+    <label class="radio inline" for="radios-4">
+      <input name="radios" id="radios-4" value="Not Done" type="radio">
+      Not Done
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date of HIV test </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">If HIV positive CD4 count </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+					   
+						<div class="tab-pane" id="tab21">
+							<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radios">Septrin Prophylaxis </label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input name="radios" id="radios-1" value="No" type="radio">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Started</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Stopped </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+					    </div>
+						<div class="tab-pane" id="tab22">
+							<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Stavudine (d4T) + Lamivudine(3TC) + Nevirapine(NVP) Date start </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Stopped</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Stavudine (d4T) + Lamivudine(3TC) + Efavirenz(EFV) Date start </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Stopped</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Zidovudine(ZDV) + didanosine(ddl) + lop/r  Date start </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Stopped</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Zidovudine(ZDV) + didanosine(ddl) + Nelfinavir(NFV) Date start </label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="textinput">Date Stopped</label>
+  <div class="controls">
+    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+    <p class="help-block">help</p>
+  </div>
+</div>
+					    </div>
+						<div class="tab-pane" id="tab23">
+							<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radios">Do you have a partner? </label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input name="radios" id="radios-1" value="No" type="radio">
+      No
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input name="radios" id="radios-2" value="Not applicable" type="radio">
+      Not applicable
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radios">If yes , has the partner been tested for HIV?  </label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input name="radios" id="radios-1" value="No" type="radio">
+      No
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input name="radios" id="radios-2" value="Declined" type="radio">
+      Declined
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="radios">Partner HIV result </label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Positive" checked="checked" type="radio">
+      Positive
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input name="radios" id="radios-1" value="Negative" type="radio">
+      Negative
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input name="radios" id="radios-2" value="Unknown" type="radio">
+      Unknown
+    </label>
+  </div>
+</div>
+					    </div>
+						<div class="tab-pane" id="tab24">
+							<!-- Multiple Radios -->
+<div class="control-group">
+  <label class="control-label" for="radios">TB Treatment</label>
+  <div class="controls">
+    <label class="radio" for="radios-0">
+      <input name="radios" id="radios-0" value="None" checked="checked" type="radio">
+      None
+    </label>
+    <label class="radio" for="radios-1">
+      <input name="radios" id="radios-1" value="Start induction" type="radio">
+      Start induction
+    </label>
+    <label class="radio" for="radios-2">
+      <input name="radios" id="radios-2" value="Change to continuation" type="radio">
+      Change to continuation
+    </label>
+    <label class="radio" for="radios-3">
+      <input name="radios" id="radios-3" value="Continue regimen" type="radio">
+      Continue regimen
+    </label>
+    <label class="radio" for="radios-4">
+      <input name="radios" id="radios-4" value="Stop" type="radio">
+      Stop
+    </label>
+  </div>
+</div>
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="checkboxes">Reason for stop/change</label>
+  <div class="controls">
+    <label class="checkbox" for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="Completed induction" type="checkbox">
+      Completed induction
+    </label>
+    <label class="checkbox" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="Completed treatment" type="checkbox">
+      Completed treatment
+    </label>
+    <label class="checkbox" for="checkboxes-2">
+      <input name="checkboxes" id="checkboxes-2" value="Toxicity" type="checkbox">
+      Toxicity
+    </label>
+    <label class="checkbox" for="checkboxes-3">
+      <input name="checkboxes" id="checkboxes-3" value="Other" type="checkbox">
+      Other
+    </label>
+  </div>
+</div>
+
+					    </div>
+    </div>
+	
+	<div class="form-group text-center">
+    <input class="btn btn-primary" id="save_draft" type="button" value="Save"/>
+    <input class="btn btn-primary" id="submit_form" type="button" value="Submit"/>
+</div>
+
+</form>
+
+</body>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $('#save_draft').click(function () {
+        document.saveDraft();
+    });
+
+    $('#submit_form').click(function(){
+        document.submit();
+    });
+
+    $('#dispensary_form').validate({
+        rules: {
+            pulse: {
+                number: true,
+                range: [0, 230]
+            },
+            temperature_c: {
+                number: true,
+                range: [25, 43]
+            },
+            weight_kg: {
+                number: true,
+                range: [0, 250]
+            },
+            height_cm: {
+                number: true,
+                range: [10, 228]
+            },
+            glycosylated_hemoglobin: {
+                number: true,
+                range: [0, 20]
+            }
+        },
+        submitHandler: function (form) {
+            $('#result').html(JSON.stringify($('form').serializeEncounterForm(),undefined,2));
+        }
+    });
+
+    var name_array = ['obs\\.tmp_drugs', '1069^REVIEW OF SYSTEMS, GENERAL^99DCT', 'obs.drugs_dispensed',
+        '6327^PATIENT EDUCATION RECEIVED THIS VISIT^99DCT', '1272^REFERRALS ORDERED^99DCT'];
+
+    $.fn.customValidationCheck = function(){
+        return $.fn.checkNoneSelectedAlone(name_array);
+    };
+
+    var dispensaryName = [
+        {"val": "2", "label": "Mosoriot Health Centre"},
+        {"val": "3", "label": "Turbo Health Centre"},
+        {"val": "12", "label": "Teso District Hospital"},
+        {"val": "60", "label": "Chepsaita Dispensary"},
+        {"val": "65", "label": "Angurai Health Centre"},
+        {"val": "90", "label": "Changara Dispensary"},
+        {"val": "91", "label": "Malaba Dispensary"},
+        {"val": "106", "label": "Kamollo Dispensary"},
+        {"val": "110", "label": "Mogoget Dispensary"},
+        {"val": "111", "label": "Biribiriet Dispensary"},
+        {"val": "112", "label": "Itigo Dispensary"},
+        {"val": "113", "label": "Lelmokwo Dispensary"},
+        {"val": "114", "label": "Kokwet Dispensary"},
+        {"val": "115", "label": "Ngechek Dispensary"},
+        {"val": "116", "label": "Cheramei Dispensary"},
+        {"val": "117", "label": "Murgusi Dispensary"},
+        {"val": "118", "label": "Cheplasgei Dispensary"},
+        {"val": "119", "label": "Sigot Dispensary"},
+        {"val": "120", "label": "Sugoi A Dispensary"},
+        {"val": "121", "label": "Sugoi B Dispensary"},
+        {"val": "122", "label": "Chepkemel Dispensary"},
+        {"val": "124", "label": "Akichelesit Dispensary"},
+        {"val": "125", "label": "Aboloi Dispensary"},
+        {"val": "126", "label": "Moding Dispensary"},
+        {"val": "127", "label": "Sambut"},
+        {"val": "128", "label": "Ngenyilel"},
+        {"val": "129", "label": "Sosiani"}
+    ];
+    $('#encounter\\.location_id').autocomplete({
+        source: dispensaryName,
+        create: function(event,ui){
+            var location_val = $('input[name="encounter\\.location_id"]').val();
+            $.each(dispensaryName, function (i, elem) {
+                if (elem.val == location_val) {
+                    $('#encounter\\.location_id').val(elem.label)
+                }
+            });
+        },
+        select: function (event, ui) {
+            $('input[name="encounter\\.location_id"]').val(ui.item.val  );
+            $('#encounter\\.location_id').val(ui.item.label);
+            return false;
+        }
+    });
+
+    var provider = [{"val":"3356-3","label":"David S. Pamba"},
+        {"val":"237-8","label":"Ariya Patrick"},
+        {"val":"3331-6","label":"Benjamin Osiya Ekirapa"},
+        {"val":"3332-4","label":"Molly Omodek Aluku"},
+        {"val":"3333-2","label":"Mercyline Lubisya Omusolo"},
+        {"val":"3334-0","label":"Julita Auma Ndege"},
+        {"val":"3335-7","label":"Caroline Fedha Injete"},
+        {"val":"3336-5","label":"Nelly Nabwire Shiundu"},
+        {"val":"3337-3","label":"Nicholas Dekkers Shitaha"},
+        {"val":"3338-1","label":"Tezra Asangire Okaal"},
+        {"val":"3340-7","label":"Sophy Ikarot Idele"},
+        {"val":"3339-9","label":"Maureen Jacinta Muteitsi"},
+        {"val":"3341-5","label":"Gibson Musera Mutira"},
+        {"val":"3342-3","label":"Titus Chuma Khusua"},
+        {"val":"3343-1","label":"Pamela Ekuriai Emukule"},
+        {"val":"3344-9","label":"Rhoda Jeruto Kurgat"},
+        {"val":"3345-6","label":"Zaitun Hassan Mohamed"},
+        {"val":"3346-4","label":"Grace Gichanga Nyathogora"},
+        {"val":"3347-2","label":"Gabriel Silas Okapes"},
+        {"val":"3348-0","label":"Henry Samson Obonyo"},
+        {"val":"3349-8","label":"Rebecca M. Wambura"},
+        {"val":"3350-6","label":"Zeruya Amwatok Barua"},
+        {"val":"3351-4","label":"Immaculate Otengo Namibia"},
+        {"val":"3352-2","label":"Pamela Were Wamoyi"},
+        {"val":"3357-1","label":"Caroline Wafula Nandisi"},
+        {"val":"3353-0","label":"Markins Opuko Cresent"},
+        {"val":"3354-8","label":"Benedict Kifufuli Wafula"},
+        {"val":"3355-5","label":"Clementine Ingosi Osiel"}];
+
+    $('#encounter\\.provider_id_select').autocomplete({
+        source: provider,
+        create: function (event, ui) {
+            var provider_val = $('input[name="encounter\\.provider_id_select"]').val();
+            $.each(provider, function (i, elem) {
+                if (elem.val == provider_val) {
+                    $('#encounter\\.provider_id_select').val(elem.label)
+                }
+            });
+        },
+        select: function (event, ui) {
+            $('input[name="encounter\\.provider_id_select"]').val(ui.item.val);
+            $('#encounter\\.provider_id_select').val(ui.item.label);
+            $('#encounter\\.provider_id').val(ui.item.val);
+            $('.show_provider_id_text').hide();
+            return false;
+        }
+    });
+    /* Start - Checking that the diastolic blood pressure is less than the systolic blood pressure */
+    $.validator.addMethod("lessThankSystolic", function (value, element) {
+                var systolicBloodPressure = parseInt($(element).closest('.section').find('.systolicBloodPressure').val());
+                return (parseInt(value) <= systolicBloodPressure);
+            }, "DBP cannot be more than Systolic Blood Pressure."
+    );
+
+    // attach 'lessThankSystolic' class to perform validation.
+    jQuery.validator.addClassRules({
+        lessThankSystolic: { lessThankSystolic: true }
+    });
+    /* End - lessThankSystolic*/
+
+    /*  Start - Based on Selected medication prescribed show dispensed fields */
+    var selectCorrespondingDrugsDispensed = function (selectedElement) {
+        var drugsArray = {"#obs\\.drugs_dispensed\\.Metformin": "#metformin_dispense",
+            "#obs\\.drugs_dispensed\\.Glibenclamide": "#glibenclamide_dispense",
+            "#obs\\.drugs_dispensed\\.Enalapril": "#enalapril_dispense",
+            "#obs\\.drugs_dispensed\\.HCTZ": "#hctz_dispense",
+            "#obs\\.drugs_dispensed\\.Losartan": "#losartan_dispense",
+            "#obs\\.drugs_dispensed\\.Nifedipine": "#nifedipine_dispense",
+            "#obs\\.drugs_dispensed\\.Other": "#other_medication"
+        };
+        $.each(drugsArray, function (k, v) {
+            if ($(k).is(':checked')) {
+                $(v).show();
+            } else {
+                $(v).hide();
+            }
+        })
+    };
+
+    var $obs_drugs_dispensed = $('input[name="obs.drugs_dispensed"]');
+    $obs_drugs_dispensed.change(function () {
+        selectCorrespondingDrugsDispensed();
+    });
+    $obs_drugs_dispensed.trigger('change');
+    /*  End - Based on Selected medication prescribed show dispensed fields */
+
+    /*  Start - Based on Current medication prescribed show dosage fields */
+    var selectCorrespondingCurrentMedication = function (selectedElement) {
+        var drugsArray = {"#obs\\.tmp_drugs\\.Metformin": "#medication_metformin",
+            "#obs\\.tmp_drugs\\.Glibenclamide": "#medication_glibenclamide",
+            "#obs\\.tmp_drugs\\.Enalapril": "#medication_enalapril",
+            "#obs\\.tmp_drugs\\.HCTZ": "#medication_hctz",
+            "#obs\\.tmp_drugs\\.Losartan": "#medication_losartan",
+            "#obs\\.tmp_drugs\\.Nifedipine": "#medication_nifedipine",
+            "#obs\\.tmp_drugs\\.Other": "#medication_other"
+        };
+        $.each(drugsArray, function (k, v) {
+            $(k).change(function () {
+                if ($(k).is(':checked')) {
+                    $(v).show();
+                } else {
+                    $(v).hide();
+                }
+            });
+            $(k).trigger('change');
+        })
+    };
+    selectCorrespondingCurrentMedication();
+    /*  End - Based on Current medication prescribed show dosage fields */
+
+    /*  Start - If some medication dose was missed, ask for reason */
+    var displayReasonForMissingMedicationWhenNeeded = function (selectedElement) {
+        var drugsArray = {"#obs\\.medication_metformin\\.number_of_pills_taken": ".metformin_missed_medication_reason",
+            "#obs\\.medication_glibenclamide\\.number_of_pills_taken": ".glibenclamide_missed_medication_reason",
+            "#obs\\.medication_enalapril\\.number_of_pills_taken": ".enalapril_missed_medication_reason",
+            "#obs\\.medication_hctz\\.number_of_pills_taken": ".hctz_missed_medication_reason",
+            "#obs\\.medication_losartan\\.number_of_pills_taken": ".losartan_missed_medication_reason",
+            "#obs\\.medication_nifedipine\\.number_of_pills_taken": ".nifedipine_missed_medication_reason"
+        };
+        $.each(drugsArray, function (pillsTaken, missedReason) {
+            $(pillsTaken).change(function () {
+                var selected_value = $(pillsTaken).val();
+                var $reason = $(missedReason);
+                if (selected_value != '' && selected_value != '1163^ALL^99DCT') {
+                    $reason.show();
+                }
+                else {
+                    $reason.hide();
+                }
+            });
+            $(pillsTaken).trigger('change');
+        })
+    };
+    displayReasonForMissingMedicationWhenNeeded();
+    /*  End - Start - If some medication dose was missed, ask for reason */
+
+    /* Start - Asks for the dosage of other medication in ml only if it is not provided in mg */
+    $(document.body).on('change', '.otherMedicationNumberOfMilligram', function () {
+        $other_medication_number_of_milliliter_group = $(this).closest('.section').children('.other_medication_number_of_milliliter_group');
+        if ($(this).val() != '') {
+            $other_medication_number_of_milliliter_group.hide();
+            $other_medication_number_of_milliliter_group.find('input').val('');
+        } else {
+            $other_medication_number_of_milliliter_group.show();
+        }
+    });
+
+    $('#other_medication_number_of_milligram').trigger('change');
+    /* End - Asks for the dosage of other medication in ml only if it is not provided in mg */
+
+    /* Start - Ask for menstrual & urine pregnancy info only if the client is a woman*/
+    var $patientSex = $('#patient\\.sex');
+    $patientSex.change(function () {
+        var $menstrualPeriod = $('.menstrualPeriod');
+        var $urinePregnancyTestQualitative = $('.urinePregnancyTestQualitative');
+        if ($patientSex.val() != 'F') {
+            $menstrualPeriod.hide();
+            $menstrualPeriod.find('select').val('');
+            $urinePregnancyTestQualitative.hide();
+            $urinePregnancyTestQualitative.find('select').val('');
+        } else {
+            $menstrualPeriod.show();
+            $urinePregnancyTestQualitative.show();
+        }
+    });
+    $patientSex.trigger('change');
+    /* End - Ask for menstrual & urine pregnancy info only if the client is a woman*/
+
+    /* Start - Checks that a field is a decimal */
+    $.validator.addClassRules({
+        systolicBloodPressure: {
+            number: true,
+            range: [50, 300]
+        },
+        diastolicBloodPressure: {
+            number: true,
+            range: [20, 150]
+        },
+        glucose: {
+            number: true,
+            range: [0, 150]
+        },
+        numberOfTablets: {
+            number: true,
+            range: [0, 180]
+        },
+        numberOfMilligrams: {
+            number: true,
+            range: [0.0, 1000.0]
+        }
+    });
+    /* End - Checks that a field is a decimal */
+
+    /* Start - Compute the BMI if the weight & height are provided */
+    var $weight = $('#weight_kg');
+    var $height = $('#height_cm');
+    var $bodyMassIndex = $('.bodyMassIndex');
+    var displayBMI = function () {
+        if (($weight.val() != '') && ($height.val() != '')) {
+            $bodyMassIndex.find('input').val(computeBMI());
+            $bodyMassIndex.show();
+        } else {
+            $bodyMassIndex.hide();
+        }
+    };
+    var computeBMI = function () {
+        var weight = parseInt($weight.val());
+        var height = parseInt($height.val()) / 100;
+        return weight / (height * height);
+    };
+
+    $weight.change(displayBMI());
+    $weight.trigger('change');
+
+    $height.change(displayBMI);
+    $height.trigger('change');
+    /* End - Compute the BMI if the weight & height are provided */
+
+    /*  Start - Based on Current medication, and medication prescribed, show or hide "dosage changed" fields */
+    var showOrHideDosageChanged = function (drugCurrent, drugDispensed, dosageChanged) {
+        if ($(drugCurrent).is(':checked') && $(drugDispensed).is(':checked')) {
+            $(dosageChanged).show();
+        } else {
+            $(dosageChanged).find("select").val('');
+            $(dosageChanged).find("select").trigger('change');
+            $(dosageChanged).hide();
+        }
+    }
+
+    var selectCorrespondingDosageChanged = function (selectedElement) {
+        var drugsArray = {
+            "Metformin": "#metformin_dosage_changed",
+            "Glibenclamide": "#glibenclamide_dosage_changed",
+            "Enalapril": "#enalapril_dosage_changed",
+            "HCTZ": "#hctz_dosage_changed",
+            "Losartan": "#losartan_dosage_changed",
+            "Nifedipine": "#nifedipine_dosage_changed"
+        };
+        $.each(drugsArray, function (k, v) {
+            var drugCurrent = "#obs\\.tmp_drugs\\." + k;
+            var drugDispensed = "#obs\\.drugs_dispensed\\." + k;
+            var dosageChanged = v;
+            $(drugCurrent).change(function () {
+                showOrHideDosageChanged(drugCurrent, drugDispensed, dosageChanged)
+            });
+            $(drugDispensed).change(function () {
+                showOrHideDosageChanged(drugCurrent, drugDispensed, dosageChanged)
+            });
+            $(drugCurrent).trigger('change');
+        })
+    };
+    selectCorrespondingDosageChanged();
+    /*  End - Based on Current medication, and medication prescribed, show or hide "dosage changed" fields */
+
+    /*  Start - Based on "Did you change the xx dosage" show or hide  "prescribed dosage" fields */
+    var showOrHidePrescribedDosage = function (selectedElement) {
+        var drugsArray = ["metformin", "glibenclamide", "enalapril", "enalapril", "hctz", "losartan", "nifedipine"];
+        $.each(drugsArray, function (index, v) {
+            var changeDosageSelect = "#obs\\.other_medication_order_" + v;
+            var prescribedDosage = "#" + v + "_prescribed_dosage";
+            var currentDosage = "#" + v + "_number_of_milligram";
+            $(changeDosageSelect).change(function () {
+                if ($(changeDosageSelect).val() == "1066^NO^99DCT") {
+                    $(prescribedDosage).find('input').val($(currentDosage).val());
+                    $(prescribedDosage).hide();
+                } else {
+                    $(prescribedDosage).show();
+                }
+            });
+            $(currentDosage).change(function () {
+                if ($(changeDosageSelect).val() == "1066^NO^99DCT") {
+                    $(prescribedDosage).find('input').val($(currentDosage).val());
+                }
+            })
+            $(changeDosageSelect).trigger('change');
+        })
+    };
+    showOrHidePrescribedDosage();
+    /*  End - Based on Selected medication prescribed show dispensed fields */
+
+    /* Start - Define variables for conditional displays */
+    var $systolicBloodPressure = $('#obs\\.systolic_blood_pressure');
+    var $diastolicBloodPressure = $('#obs\\.diastolic_blood_pressure');
+    var $currentVisitType = $('#obs\\.current_visit_type');
+    var $metforminCurrentMilligram = $('#metformin_number_of_milligram');
+    var $urinePregnancyTest = $('#obs\\.urine_pregnancy_test_qualitative');
+    var $serumGlucoseFasting = $('#obs\\.serum_glucose_fasting');
+    var $glycosylatedHemoglobin = $('#glycosylated_hemoglobin');
+    var $metforminFrequencyPerDay = $('#obs\\.medication_metformin\\.medication_frequency_per_day');
+    var getCurrentMedicationValues = function () {
+        return $('input[name="obs.tmp_drugs"]:checked').map(function () {
+            return this.value;
+        }).get();
+    };
+    var getReviewOfSystemsGeneralValues = function () {
+        return $('input[name="1069^REVIEW OF SYSTEMS, GENERAL^99DCT"]:checked').map(function () {
+            return this.value;
+        }).get();
+    };
+    var checkReviewOfSystemsGeneralForDisplay = function () {
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        return reviewOfSystemsGeneral.indexOf("590^EDEMA, LEGS^99DCT") < 0 && reviewOfSystemsGeneral.indexOf("5963^SHORTNESS OF BREATH WITH EXERTION^99DCT") < 0 &&
+                reviewOfSystemsGeneral.indexOf("6021^OLIGURIA^99DCT") < 0 && reviewOfSystemsGeneral.indexOf("6005^FOCAL WEAKNESS^99DCT") < 0;
+    };
+    /* End - Define variables for conditional displays */
+
+    /* Start - Conditional display of HTN reminders */
+
+    var displayHTNReminder1 = function () {
+        var $htn_reminder_1 = $('#htn_reminder_1');
+        var selectedVisitType = $currentVisitType.val();
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var currentMedication = getCurrentMedicationValues();
+        if ((selectedVisitType == '7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT' || selectedVisitType == '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT') &&
+                (systolicBloodValue >= 100 && systolicBloodValue <= 140) && (diastolicBloodValue >= 50 && diastolicBloodValue <= 90) &&
+                currentMedication.indexOf("enalapril") < 0 && currentMedication.indexOf("hctz") < 0 && currentMedication.indexOf("losartan") < 0
+                && currentMedication.indexOf("nifedipine") < 0 && checkReviewOfSystemsGeneralForDisplay()
+                ) {
+            $htn_reminder_1.show();
+        } else {
+            $htn_reminder_1.hide();
+        }
+    };
+    displayHTNReminder1();
+
+    var $urinePregnancyTestQualitative = $('#obs\\.urine_pregnancy_test_qualitative');
+    var $birthdate = $('#patient\\.birthdate');
+    var conditionToDisplayHTNReminder2 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        return ((selectedVisitType == '7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT') &&
+                ((systolicBloodValue >= 140 && systolicBloodValue <= 180) || (diastolicBloodValue >= 90 && diastolicBloodValue <= 110)) &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT' &&
+                checkReviewOfSystemsGeneralForDisplay());
+    };
+    var displayHTNReminder2 = function () {
+        var $htn_reminder_2 = $('#htn_reminder_2');
+        var birthdate = $birthdate.val();
+        var ageInYears = $.fn.getAgeInYears(birthdate);
+        if (conditionToDisplayHTNReminder2() && ageInYears <= 35) {
+            $htn_reminder_2.show();
+        } else {
+            $htn_reminder_2.hide();
+        }
+    };
+    displayHTNReminder2();
+
+    var $serumGlucoseFasting = $('#serum_glucose_fasting');
+    var $glycosylatedHemoglobin = $('#glycosylated_hemoglobin');
+    var isAtLeast35YearsOld = function () {
+        var birthdate = $birthdate.val();
+        var ageInYears = $.fn.getAgeInYears(birthdate);
+        return ageInYears >= 35;
+    };
+    var displayHTNReminder3a = function () {
+        var $htn_reminder_3a = $('#htn_reminder_3a');
+        var serumGlucoseFasting = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobin = parseFloat($glycosylatedHemoglobin.val());
+        if (conditionToDisplayHTNReminder2() && serumGlucoseFasting <= 5.6 &&
+                glycosylatedHemoglobin <= 5.7 && isAtLeast35YearsOld()) {
+            $htn_reminder_3a.show();
+        } else {
+            $htn_reminder_3a.hide();
+        }
+    };
+    displayHTNReminder3a();
+
+    var displayHTNReminder3b = function () {
+        var $htn_reminder_3b = $('#htn_reminder_3b');
+        var currentMedication = getCurrentMedicationValues();
+        if (conditionToDisplayHTNReminder2() && isAtLeast35YearsOld() &&
+                (currentMedication.indexOf("enalapril") >= 0 || currentMedication.indexOf("hctz") >= 0 ||
+                        currentMedication.indexOf("losartan") >= 0 || currentMedication.indexOf("nifedipine") >= 0)
+                ) {
+            $htn_reminder_3b.show();
+        } else {
+            $htn_reminder_3b.hide();
+        }
+    };
+    displayHTNReminder3b();
+
+    var displayHTNReminder3c = function () {
+        var $htn_reminder_3c = $('#htn_reminder_3c');
+        var serumGlucoseFasting = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobin = parseFloat($glycosylatedHemoglobin.val());
+        if (conditionToDisplayHTNReminder2() && serumGlucoseFasting >= 5.6 &&
+                glycosylatedHemoglobin >= 5.7 && isAtLeast35YearsOld()) {
+            $htn_reminder_3c.show();
+        } else {
+            $htn_reminder_3c.hide();
+        }
+    };
+    displayHTNReminder3c();
+
+    var displayHTNReminder4 = function () {
+        var $htn_reminder_4 = $('#htn_reminder_4');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        if ((systolicBloodValue >= 180 || diastolicBloodValue >= 110) &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT') {
+            $htn_reminder_4.show();
+        } else {
+            $htn_reminder_4.hide();
+        }
+    };
+    displayHTNReminder4();
+
+    var displayHTNReminder5 = function () {
+        var $htn_reminder_5 = $('#htn_reminder_5');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        if ((systolicBloodValue >= 140 || diastolicBloodValue >= 90) &&
+                urinePregnancyTestQualitativeValue == '703^POSITIVE^99DCT') {
+            $htn_reminder_5.show();
+        } else {
+            $htn_reminder_5.hide();
+        }
+    };
+    displayHTNReminder5();
+
+    var conditionToDisplayHTNReminder6 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        var currentMedication = getCurrentMedicationValues();
+        return ((selectedVisitType == '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT') &&
+                ((systolicBloodValue >= 140 && systolicBloodValue <= 180) || (diastolicBloodValue >= 90 && diastolicBloodValue <= 110)) &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT' && isAtLeast35YearsOld() &&
+                checkReviewOfSystemsGeneralForDisplay() &&
+                currentMedication.indexOf("enalapril") < 0 && currentMedication.indexOf("hctz") < 0 && currentMedication.indexOf("losartan") < 0
+                && currentMedication.indexOf("nifedipine") < 0);
+    };
+    var displayHTNReminder6 = function () {
+        var $htn_reminder_6a = $('#htn_reminder_6a');
+        var serumGlucoseFasting = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobin = parseFloat($glycosylatedHemoglobin.val());
+        if (conditionToDisplayHTNReminder6() && (serumGlucoseFasting <= 5.6 || glycosylatedHemoglobin <= 5.7)) {
+            $htn_reminder_6a.show();
+        } else {
+            $htn_reminder_6a.hide();
+        }
+    };
+    displayHTNReminder6();
+
+    var displayHTNReminder6b = function () {
+        var $htn_reminder_6b = $('#htn_reminder_6b');
+        var serumGlucoseFasting = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobin = parseFloat($glycosylatedHemoglobin.val());
+        if (conditionToDisplayHTNReminder6() && (serumGlucoseFasting >= 5.6 || glycosylatedHemoglobin >= 5.7)) {
+            $htn_reminder_6b.show();
+        } else {
+            $htn_reminder_6b.hide();
+        }
+    };
+    displayHTNReminder6b();
+
+    var displayHTNReminder7 = function () {
+        var $htn_reminder_7 = $('#obs\\.htn_reminder_7');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        if (((systolicBloodValue >= 100 && systolicBloodValue <= 180) || (diastolicBloodValue >= 90 && diastolicBloodValue <= 110)) &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT' &&
+                (reviewOfSystemsGeneral.indexOf("590^EDEMA, LEGS^99DCT") >= 0 || reviewOfSystemsGeneral.indexOf("5963^SHORTNESS OF BREATH WITH EXERTION^99DCT") >= 0 ||
+                        reviewOfSystemsGeneral.indexOf("6021^OLIGURIA^99DCT") >= 0 || reviewOfSystemsGeneral.indexOf("6005^FOCAL WEAKNESS^99DCT") >= 0)) {
+            $htn_reminder_7.show();
+        } else {
+            $htn_reminder_7.hide();
+        }
+    };
+    displayHTNReminder7();
+
+    var $hctzNumberOfMilligram = $('#hctz_number_of_milligram');
+    var $hctzFrequencyPerDay = $('#obs\\.medication_hctz\\.medication_frequency_per_day');
+    var displayHTNReminder8 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var $htn_reminder_8 = $('#obs\\.htn_reminder_8');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        var currentMedication = getCurrentMedicationValues();
+        var hctzNumberOfMilligram = parseFloat($hctzNumberOfMilligram.val());
+        var hctzFrequencyPerDay = $hctzFrequencyPerDay.val();
+        if (selectedVisitType != '7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT' && systolicBloodValue <= 140
+                && diastolicBloodValue <= 90 &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT' && isAtLeast35YearsOld() &&
+                checkReviewOfSystemsGeneralForDisplay() && currentMedication.indexOf("hctz") >= 0 &&
+                hctzNumberOfMilligram == 25 &&
+                (hctzFrequencyPerDay == '1639^MORNING^99DCT' || hctzFrequencyPerDay == '1730^EVENING^99DCT' ||
+                        hctzFrequencyPerDay == '1891^ONCE A DAY^99DCT'
+                        )
+                ) {
+            $htn_reminder_8.show();
+        } else {
+            $htn_reminder_8.hide();
+        }
+    };
+    displayHTNReminder8();
+
+    var displayHTNReminder9 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var $htn_reminder_9 = $('#obs\\.htn_reminder_9');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        var urinePregnancyTestQualitativeValue = $urinePregnancyTestQualitative.val();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        var currentMedication = getCurrentMedicationValues();
+        var hctzNumberOfMilligram = parseFloat($hctzNumberOfMilligram.val());
+        var hctzFrequencyPerDay = $hctzFrequencyPerDay.val();
+        if (selectedVisitType == '7036^RETURN DISPENSARY VISIT^99DCT' &&
+                ((systolicBloodValue >= 140 && systolicBloodValue <= 180) ||
+                        (diastolicBloodValue >= 90 && diastolicBloodValue <= 110) ) &&
+                urinePregnancyTestQualitativeValue != '703^POSITIVE^99DCT' && isAtLeast35YearsOld() &&
+                checkReviewOfSystemsGeneralForDisplay() && currentMedication.indexOf("hctz") >= 0 &&
+                hctzNumberOfMilligram == 25 &&
+                (hctzFrequencyPerDay == '1639^MORNING^99DCT' || hctzFrequencyPerDay == '1730^EVENING^99DCT' ||
+                        hctzFrequencyPerDay == '1891^ONCE A DAY^99DCT'
+                        )
+                ) {
+            $htn_reminder_9.show();
+        } else {
+            $htn_reminder_9.hide();
+        }
+    };
+    displayHTNReminder9();
+
+    $('#obs\\.tmp_drugs\\.HCTZ').change(function () {
+        displayHTNReminder8();
+        displayHTNReminder9();
+    });
+    $hctzNumberOfMilligram.change(function () {
+        displayHTNReminder8();
+        displayHTNReminder9();
+    });
+    $hctzFrequencyPerDay.change(function () {
+        displayHTNReminder8();
+        displayHTNReminder9();
+    });
+
+    var displayHTNReminder10 = function () {
+        var $htn_reminder_10 = $('#obs\\.htn_reminder_10');
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+        if (systolicBloodValue <= 100 || diastolicBloodValue <= 50) {
+            $htn_reminder_10.show();
+        } else {
+            $htn_reminder_10.hide();
+        }
+    };
+    displayHTNReminder10();
+    /* End - Conditional display of HTN reminders */
+
+    /* Start - Conditional display of Diabetes reminders */
+
+    /* Start - DiabetesReminder1 */
+    var displayDiabetesReminder1 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var currentMedication = getCurrentMedicationValues();
+        var glycosylatedHemoglobinVal = parseFloat($glycosylatedHemoglobin.val());
+
+        var shouldDisplay = (
+                selectedVisitType in {'7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT': 1, '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT': 1} &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        currentMedication.indexOf("metformin") < 0 && currentMedication.indexOf("glibenclamide") < 0 &&
+                        (serumGlucoseFastingVal < 5.6 || glycosylatedHemoglobinVal < 5.7)
+                )
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_1').show();
+        else
+            $('#obs\\.diabetes_reminder_1').hide();
+    }
+    displayDiabetesReminder1();
+    /* End - DiabetesReminder1 */
+
+    /* Start - DiabetesReminder2 */
+    var displayDiabetesReminder2 = function () {
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobinVal = parseFloat($glycosylatedHemoglobin.val());
+
+        var shouldDisplay = (
+                urinePregnancyTestVal == '703^POSITIVE^99DCT' &&
+                        (serumGlucoseFastingVal >= 5.6 || glycosylatedHemoglobinVal >= 5.7)
+                )
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_2').show();
+        else
+            $('#obs\\.diabetes_reminder_2').hide();
+    }
+    displayDiabetesReminder2();
+    /* End - DiabetesReminder2 */
+
+    /* Start - DiabetesReminder3 */
+    var displayDiabetesReminder3 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var currentMedication = getCurrentMedicationValues();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobinVal = parseFloat($glycosylatedHemoglobin.val());
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+
+        var shouldDisplay = (
+                selectedVisitType in {'7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT': 1, '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT': 1} &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        currentMedication.indexOf("metformin") < 0 && currentMedication.indexOf("glibenclamide") < 0 &&
+                        ((serumGlucoseFastingVal >= 5.6 && serumGlucoseFastingVal <= 6.9) ||
+                                (glycosylatedHemoglobinVal >= 5.7 && glycosylatedHemoglobinVal <= 7.0) ||
+                                (systolicBloodValue < 140 || diastolicBloodValue < 90))
+                );
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_3').show();
+        else
+            $('#obs\\.diabetes_reminder_3').hide();
+    }
+    displayDiabetesReminder3();
+    /* End - DiabetesReminder3 */
+
+    /* Start - DiabetesReminder4 */
+    var displayDiabetesReminder4 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var currentMedication = getCurrentMedicationValues();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobinVal = parseFloat($glycosylatedHemoglobin.val());
+        var systolicBloodValue = parseFloat($systolicBloodPressure.val());
+        var diastolicBloodValue = parseFloat($diastolicBloodPressure.val());
+
+        var shouldDisplay = (
+                selectedVisitType in {'7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT': 1, '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT': 1} &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        currentMedication.indexOf("metformin") < 0 && currentMedication.indexOf("glibenclamide") < 0 &&
+                        ((serumGlucoseFastingVal > 6.9 && serumGlucoseFastingVal <= 10) ||
+                                (glycosylatedHemoglobinVal > 7 && glycosylatedHemoglobinVal <= 9) ||
+                                (systolicBloodValue < 140 || diastolicBloodValue < 90))
+                );
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_4').show();
+        else
+            $('#obs\\.diabetes_reminder_4').hide();
+    }
+    displayDiabetesReminder4();
+    /* End - DiabetesReminder4 */
+
+    /* Start - DiabetesReminder5 */
+    var displayDiabetesReminder5 = function () {
+        /*
+         relevant="(../../current_visit_type/value = '7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT' or ../../current_visit_type/value = '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT')
+         and ../../urine_pregnancy_test_qualitative/value != '703^POSITIVE^99DCT'
+         and not(selected(../../tmp_drugs, 'metformin') or
+         selected(../../tmp_drugs, 'glibenclamide'))
+         and (../../serum_glucose_fasting/value &gt; 10.0 or ../../glycosylated_hemoglobin/value &gt; 9.0)"/>
+         */
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var currentMedication = getCurrentMedicationValues();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var glycosylatedHemoglobinVal = parseFloat($glycosylatedHemoglobin.val());
+
+        var shouldDisplay = (
+                selectedVisitType in {'7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT': 1, '7035^SECOND DISPENSARY VISIT AFTER HCT ^99DCT': 1} &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        currentMedication.indexOf("metformin") < 0 && currentMedication.indexOf("glibenclamide") < 0 &&
+                        (serumGlucoseFastingVal > 10 || glycosylatedHemoglobinVal > 9)
+                );
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_5').show();
+        else
+            $('#obs\\.diabetes_reminder_5').hide();
+    }
+    displayDiabetesReminder5();
+    /* End - DiabetesReminder5 */
+
+    /* Start - DiabetesReminder6 */
+    var displayDiabetesReminder6 = function () {
+        var currentMedication = getCurrentMedicationValues();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+
+        var shouldDisplay = (
+                currentMedication.indexOf("metformin") >= 0 &&
+                        (reviewOfSystemsGeneral.indexOf("5978^NAUSEA^99DCT") >= 0 ||
+                                reviewOfSystemsGeneral.indexOf("5980^VOMITING^99DCT") >= 0 ||
+                                reviewOfSystemsGeneral.indexOf("151^ABDOMINAL PAIN^99DCT") >= 0 ||
+                                reviewOfSystemsGeneral.indexOf("16^DIARRHEA^99DCT") >= 0 ||
+                                reviewOfSystemsGeneral.indexOf("996^CONSTIPATION^99DCT") >= 0)
+                );
+
+        if (shouldDisplay) {
+            $('#obs\\.diabetes_reminder_6').show();
+            $('#diabetes_reminder6_symptoms').text(reviewOfSystemsGeneral.join(", "));
+        }
+        else
+            $('#obs\\.diabetes_reminder_6').hide();
+    }
+    displayDiabetesReminder6();
+    /* End - DiabetesReminder6 */
+
+    /* Start - DiabetesReminder7 */
+    var displayDiabetesReminder7 = function () {
+        var currentMedication = getCurrentMedicationValues();
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+
+        var shouldDisplay = (
+                currentMedication.indexOf("glibenclamide") >= 0 &&
+                        reviewOfSystemsGeneral.indexOf("7047^HYPOGLYCEMIA^99DCT") >= 0
+                );
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_7').show();
+        else
+            $('#obs\\.diabetes_reminder_7').hide();
+    };
+    displayDiabetesReminder7();
+    /* End - DiabetesReminder7 */
+
+    /* Start - DiabetesReminder8 */
+    var displayDiabetesReminder8 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        var currentMedication = getCurrentMedicationValues();
+        var metforminCurrentMilligramVal = parseFloat($metforminCurrentMilligram.val());
+        var metforminFrequencyPerDayVal = $metforminFrequencyPerDay.val();
+
+        var shouldDisplay = (
+                selectedVisitType == '7036^RETURN DISPENSARY VISIT^99DCT' &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        serumGlucoseFastingVal >= 8 &&
+                        reviewOfSystemsGeneral.indexOf("5978^NAUSEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("151^ABDOMINAL PAIN^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("16^DIARRHEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("996^CONSTIPATION^99DCT") < 0 &&
+                        currentMedication.indexOf("metformin") >= 0 &&
+                        metforminCurrentMilligramVal == 500 &&
+                        metforminFrequencyPerDayVal == '1888^TWICE A DAY^99DCT'
+                )
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_8').show();
+        else
+            $('#obs\\.diabetes_reminder_8').hide();
+    }
+    displayDiabetesReminder8();
+    /* End - DiabetesReminder8 */
+
+    /* Start - DiabetesReminder9 */
+    var displayDiabetesReminder9 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        var currentMedication = getCurrentMedicationValues();
+        var metforminCurrentMilligramVal = parseFloat($metforminCurrentMilligram.val());
+        var metforminFrequencyPerDayVal = $metforminFrequencyPerDay.val();
+
+        var shouldDisplay = (
+                selectedVisitType == '7036^RETURN DISPENSARY VISIT^99DCT' &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        serumGlucoseFastingVal >= 8 &&
+                        reviewOfSystemsGeneral.indexOf("5978^NAUSEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("151^ABDOMINAL PAIN^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("16^DIARRHEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("996^CONSTIPATION^99DCT") < 0 &&
+                        currentMedication.indexOf("metformin") >= 0 &&
+                        metforminCurrentMilligramVal == 750 &&
+                        metforminFrequencyPerDayVal == '1888^TWICE A DAY^99DCT'
+                )
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_9').show();
+        else
+            $('#obs\\.diabetes_reminder_9').hide();
+    }
+    displayDiabetesReminder9();
+    /* End - DiabetesReminder9 */
+
+    /* Start - DiabetesReminder10 */
+    var displayDiabetesReminder10 = function () {
+        var selectedVisitType = $currentVisitType.val();
+        var urinePregnancyTestVal = $urinePregnancyTest.val();
+        var serumGlucoseFastingVal = parseFloat($serumGlucoseFasting.val());
+        var reviewOfSystemsGeneral = getReviewOfSystemsGeneralValues();
+        var currentMedication = getCurrentMedicationValues();
+        var metforminCurrentMilligramVal = parseFloat($metforminCurrentMilligram.val());
+        var metforminFrequencyPerDayVal = $metforminFrequencyPerDay.val();
+
+        var shouldDisplay = (
+                selectedVisitType == '7036^RETURN DISPENSARY VISIT^99DCT' &&
+                        urinePregnancyTestVal != '703^POSITIVE^99DCT' &&
+                        serumGlucoseFastingVal >= 8 &&
+                        reviewOfSystemsGeneral.indexOf("5978^NAUSEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("5980^VOMITING^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("151^ABDOMINAL PAIN^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("16^DIARRHEA^99DCT") < 0 &&
+                        reviewOfSystemsGeneral.indexOf("996^CONSTIPATION^99DCT") < 0 &&
+                        currentMedication.indexOf("metformin") >= 0 &&
+                        metforminCurrentMilligramVal == 1000
+                )
+
+        if (shouldDisplay)
+            $('#obs\\.diabetes_reminder_10').show();
+        else
+            $('#obs\\.diabetes_reminder_10').hide();
+    }
+    displayDiabetesReminder10();
+    /* End - DiabetesReminder10 */
+    /* End - Conditional display of Diabetes reminders */
+
+    /*  Start - Based on Selected current visit type show or hide fields */
+    var displayPHCTReview = function () {
+        var $show_provider_id_text = $("#phct_review");
+        var selected_visit_type = $currentVisitType.val();
+        if (selected_visit_type == '7034^FIRST DISPENSARY VISIT AFTER HCT^99DCT') {
+            $("#phct_review").show();
+        } else {
+            $("#phct_review").hide();
+        }
+    };
+    /*  End - Based on Selected current visit type show or hide fields */
+
+    /* Start - Reminder triggers */
+    $birthdate.change(function () {
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder8();
+        displayHTNReminder9();
+    });
+    $currentVisitType.change(function () {
+        displayPHCTReview();
+        displayHTNReminder1();
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder8();
+        displayHTNReminder9();
+        displayDiabetesReminder1();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+        displayDiabetesReminder5();
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $urinePregnancyTest.change(function () {
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder4();
+        displayHTNReminder5();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder7();
+        displayHTNReminder8();
+        displayHTNReminder9();
+        displayDiabetesReminder1();
+        displayDiabetesReminder2();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+        displayDiabetesReminder5();
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $serumGlucoseFasting.change(function () {
+        displayHTNReminder3a();
+        displayHTNReminder3c();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayDiabetesReminder1();
+        displayDiabetesReminder2();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+        displayDiabetesReminder5();
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $glycosylatedHemoglobin.change(function () {
+        displayHTNReminder3a();
+        displayHTNReminder3c();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayDiabetesReminder1();
+        displayDiabetesReminder2();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+        displayDiabetesReminder5();
+    });
+    $systolicBloodPressure.change(function () {
+        displayHTNReminder1();
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder4();
+        displayHTNReminder5();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder7();
+        displayHTNReminder8();
+        displayHTNReminder9();
+        displayHTNReminder10();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+    });
+    $('input[name="obs.tmp_drugs"]').change(function () {
+        displayHTNReminder1();
+        displayHTNReminder3b();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayDiabetesReminder1();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+        displayDiabetesReminder5();
+        displayDiabetesReminder6();
+        displayDiabetesReminder7();
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $('input[name="1069^REVIEW OF SYSTEMS, GENERAL^99DCT"]').change(function () {
+        displayHTNReminder1();
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder7();
+        displayHTNReminder8();
+        displayHTNReminder9();
+        displayDiabetesReminder6();
+        displayDiabetesReminder7();
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $diastolicBloodPressure.change(function () {
+        displayHTNReminder1();
+        displayHTNReminder2();
+        displayHTNReminder3a();
+        displayHTNReminder3b();
+        displayHTNReminder3c();
+        displayHTNReminder4();
+        displayHTNReminder5();
+        displayHTNReminder6();
+        displayHTNReminder6b();
+        displayHTNReminder7();
+        displayHTNReminder8();
+        displayHTNReminder9();
+        displayHTNReminder10();
+        displayDiabetesReminder3();
+        displayDiabetesReminder4();
+    });
+    $metforminCurrentMilligram.change(function () {
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+        displayDiabetesReminder10();
+    });
+    $metforminFrequencyPerDay.change(function () {
+        displayDiabetesReminder8();
+        displayDiabetesReminder9();
+    });
+
+    /* End - Reminder triggers */
+});
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+	
+	
