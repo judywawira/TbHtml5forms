@@ -94,11 +94,11 @@
     <label>The type of TB</label>
 
     <div class="form-group">
-        <fieldset name="obs.tmp_drugs">
-            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">Pulmonary</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">ExtraPulmonary</label><br>
+        <fieldset name="Type of TB">
+            <input id="obs.tb.pulmonary" type="checkbox" name="obs_tb_pulmonary" value="Pulmonary">
+            <label for="obs.tb.pulmonary">Pulmonary</label><br>
+            <input id="obs.tb.extrapulmonary" type="checkbox" name="obs.tb.extrapulmonary" value="ExtraPulmonary">
+            <label for="obs.tb.extrapulmonary">ExtraPulmonary</label><br>
             
         </fieldset>
     </div>
@@ -132,15 +132,15 @@
     <label>If Pulmonary TB, select appropriate</label>
 
     <div class="form-group">
-        <fieldset name="obs.tmp_drugs">
-            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">Smear Positive</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Smear Negative</label><br>
-			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">Smear not done (&gt;15 years)</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Smear not done (&lt;15 years)</label><br>
+        <fieldset name="obs.type.pulmonarytb">
+            <input id="obs.type.pulmonarytb_smearpositive" type="checkbox" name="obs.type.pulmonarytb" value="162181^Smear positive^99DCT">
+            <label for="obs.type.pulmonarytb_smearpositive">Smear Positive</label><br>
+            <input id="obs.type.pulmonarytb_smearnegative" type="checkbox" name="obs.type.pulmonarytb" value="162182^Smear Negative^99DCT">
+            <label for="obs.type.pulmonarytb_smearnegative">Smear Negative</label><br>
+			<input id="obs.type.pulmonarytb_smearnotdonegt15" type="checkbox" name="obs.type.pulmonarytb" value="162184^Smear not done ( &amp;gt; 15 years)^99DCT">
+            <label for="obs.type.pulmonarytb_smearnotdonegt15">Smear not done (&gt;15 years)</label><br>
+            <input id="obs.type.pulmonarytb_smearnotdonelt15" type="checkbox" name="obs.type.pulmonarytb" value="162183^Smear not done ( &amp;lt; 15 years)^99DCT">
+            <label for="obs.type.pulmonarytb_smearnotdonelt15">Smear not done (&lt;15 years)</label><br>
 			    
             
         </fieldset>
@@ -148,28 +148,28 @@
 </div>
 <div class="section">
    
-    <label>Type Of Patient</label>
+    <label>Type Of Patient:type of tuberculosis patient, based on previous treatment</label>
 
     <div class="form-group">
-        <fieldset name="obs.tmp_drugs">
-            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">New, Smear Positive</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">New, Smear Negative</label><br>
-			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">Smear Positive, Relapse</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Smear Negative Relapse</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Retreatment after defaulting</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide"> Failure</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide"> New, extra pulmonary</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide"> Extra pulmonary relapse</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Transfer in</label><br>
+        <fieldset name="type_of_tuberculosis_patient_based_on_previous_treatment">
+            <input id="obs.new_smear_positive" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159878^smear positive, new tuberculosis patient^99DCT">
+            <label for="">New, Smear Positive</label><br>
+            <input id="obs.new_smear_negative" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="162187^smear negative, new tuberculosis patient^99DCT">
+            <label for="obs.new_smear_negative">New, Smear Negative</label><br>
+			<input id="obs.smear_positive_relapse" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159877^relapse, smear positive tuberculosis^99DCT">
+            <label for="obs.smear_positive_relapse">Smear Positive, Relapse</label><br>
+            <input id="obs.smear_negative_relapse" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159876^relapse, smear negative tuberculosis^99DCT">
+            <label for="obs.smear_negative_relapse">Smear Negative Relapse</label><br>
+			<input id="obs.retreatment" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159873^retreatment after default, tuberculosis^99DCT">
+            <label for="obs.retreatment">Retreatment after defaulting</label><br>
+			<input id="obs.failure" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159874^tuberculosis treatment failure^99DCT">
+            <label for="obs.failure"> Failure</label><br>
+			<input id="obs.new_extrapulmonary" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="162186^new,extra pulmonary tuberculosis^99DCT">
+            <label for="obs.new_extrapulmonary"> New, extra pulmonary</label><br>
+			<input id="obs.extra_pulmonaryrelapse" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159875^relapse, extra-pulmonary tuberculosis^99DCT">
+            <label for="obs.extra_pulmonaryrelapse"> Extra pulmonary relapse</label><br>
+			<input id="obs.transferin" type="checkbox" name="type_of_tuberculosis_patient_based_on_previous_treatment" value="159872^transfer in, tuberculosis patient^99DCT">
+            <label for="obs.transferin">Transfer in</label><br>
 			    
             
         </fieldset>
