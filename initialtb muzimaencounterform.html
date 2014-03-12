@@ -176,17 +176,17 @@
     </div>
 </div>
 <div class="section">
-       <div class="form-group menstrualPeriod">
-        <label for="obs.last_menstrual_period_qualitative">DOT Provided By
+       <div class="form-group dot provided by">
+        <label for="obs.dotprovidedby">DOT Provided By
             </label>
-        <select class="form-control" id="obs.last_menstrual_period_qualitative"
+        <select class="form-control" id="obs.dotprovidedby"
                 name="obs.last_menstrual_period_qualitative"
-                data-concept="7048^LAST MENSTRUAL PERIOD, QUALITATIVE^99DCT">
+                data-concept="162189^DOT provided by^99DC">
             <option value="">...</option>
-            <option value="7049^LESS THAN 35 DAYS^99DCT">Health care worker</option>
-            <option value="7050^MORE THAN 35 DAYS^99DCT"> Household member, friend, relative</option>
-            <option value="1624^DO NOT KNOW^99DCT"> Community Volunteer</option>
-			 <option value="1624^DO NOT KNOW^99DCT"> Not Done</option>
+            <option value="5619^HEALTH CARE PROVIDER^99DCT">Health care worker</option>
+            <option value="162188^Household member, friend , relative^99DCT"> Household member, friend, relative</option>
+            <option value="162188^Household member, friend , relative^99DCT"> Community Volunteer</option>
+			 <option value="1118^NOT DONE^99DCT"> Not Done</option>
         </select>
     </div>
 </div>
@@ -194,22 +194,22 @@
        <div class="form-group menstrualPeriod">
         <label for="obs.last_menstrual_period_qualitative">Reffered By
             </label>
-        <select class="form-control" id="obs.last_menstrual_period_qualitative"
-                name="obs.last_menstrual_period_qualitative"
-                data-concept="7048^LAST MENSTRUAL PERIOD, QUALITATIVE^99DCT">
+        <select class="form-control" id="obs.refferedby"
+                name="obs.refferedby"
+                data-concept="162193^Referred by^99DCT">
             <option value="">...</option>
-            <option value="7049^LESS THAN 35 DAYS^99DCT">VCT center</option>
-            <option value="7050^MORE THAN 35 DAYS^99DCT"> HIV Clinic</option>
-            <option value="1624^DO NOT KNOW^99DCT"> STI Clinic</option>
-			<option value="1624^DO NOT KNOW^99DCT"> home based care</option>
-			<option value="1624^DO NOT KNOW^99DCT">  Private sector</option>
-			<option value="1624^DO NOT KNOW^99DCT">ANC</option>
-			<option value="1624^DO NOT KNOW^99DCT"> Chemist/Pharmacist</option>
-			<option value="1624^DO NOT KNOW^99DCT">  PMTCT</option>
-			<option value="1624^DO NOT KNOW^99DCT">  Self Refferal</option>
-			<option value="1624^DO NOT KNOW^99DCT">  Contact Invitation</option>
-			<option value="1624^DO NOT KNOW^99DCT">  Cough Monitor</option>
-			<option value="1624^DO NOT KNOW^99DCT">  Community Health Worker</option>
+            <option value="159940^voluntary counseling and testing center^99DCT">VCT center</option>
+            <option value="162190^HIV care clinic^99DCT"> HIV Clinic</option>
+            <option value="160546^Sexually transmitted infection program/clinic^99DCT"> STI Clinic</option>
+			<option value="161359^Private home-based care^99DCT"> home based care</option>
+			<option value="162194^Chemist^99DCT">  Private sector</option>
+			<option value="162191^Antenatal Clinic^99DCT">ANC</option>
+			<option value="162194^Chemist^99DCT"> Chemist/Pharmacist</option>
+			<option value="160538^Prevention of maternal to child transmission program">  PMTCT</option>
+			<option value="160551^Self-referral^99DCT">  Self Refferal</option>
+			<option value="contact_invitation">  Contact Invitation</option>
+			<option value="cough_monitor">  Cough Monitor</option>
+			<option value="community_health_care_worker">  Community Health Worker</option>
 						
 			
 			 
@@ -219,9 +219,9 @@
 <div class="section">
 
         <div class="form-group">
-            <label for="return_visit_date">Start Date of Treatment<span class="required">*</span></label>
+            <label for="tuberculosis_drug_startdatetreatement">Start Date of Treatment<span class="required">*</span></label>
             <input class="form-control datepicker"  id="return_visit_date"
-                   name="return_visit_date" data-concept="5096^RETURN VISIT DATE^99DCT"
+                   name="tuberculosis_drug_startdatetreatement" data-concept="1113^TUBERCULOSIS DRUG TREATMENT START DATE^99DCT"
                    type="text" required="required">
         </div>
     </div>
@@ -230,28 +230,28 @@
     <label>Regimens</label>
 
     <div class="form-group">
-        <fieldset name="obs.tmp_drugs">
-            <input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">2RHZE/6EH</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">2RHZ/6EH</label><br>
-			<input id="obs.tmp_drugs.Metformin" type="checkbox" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">2SRHZE/1RHZE/5RHE</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">2RHZ/4RH(children &lt;15 yrs)</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide"> 2RFBHZE/4RFBH</label><br>
-			<input id="obs.tmp_drugs.Glibenclamide" type="checkbox" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">Other specify</label><br>
+        <fieldset name="obs.regimen">
+            <input id="obs.regimen.2RHZE/6EH" type="checkbox" name="obs.regimen" value="2RHZE/6EH">
+            <label for="obs.regimen.2RHZE/6EH">2RHZE/6EH</label><br>
+            <input id="obs.regimen.2RHZ/6EH" type="checkbox" name="obs.regimen" value="2RHZ/6EH">
+            <label for="obs.regimen.2RHZ/6EH">2RHZ/6EH</label><br>
+			<input id="obs.regimen.2SRHZE/1RHZE/5RHE" type="checkbox" name="obs.regimen" value="2SRHZE/1RHZE/5RHE">
+            <label for="obs.regimen.2SRHZE/1RHZE/5RHE">2SRHZE/1RHZE/5RHE</label><br>
+            <input id="obs.regimen.2RHZ/4RH(children &lt;15 yrs)" type="checkbox" name="obs.regimen" value="2RHZ/4RH(children &lt;15 yrs)">
+            <label for="obs.regimen.2RHZ/4RH(children &lt;15 yrs)">2RHZ/4RH(children &lt;15 yrs)</label><br>
+			<input id="obs.regimen.2RFBHZE/4RFBH" type="checkbox" name="obs.regimen" value="2RFBHZE/4RFBH">
+            <label for="obs.regimen.2RFBHZE/4RFBH"> 2RFBHZE/4RFBH</label><br>
+			<input id="obs.regimen.other" type="checkbox" name="obs.regimen" value="other">
+            <label for="obs.regimen.other">Other specify</label><br>
 			
 			    
             
         </fieldset>
     </div>
 	<div class="form-group">
-            <label for="freetext_general">Other Specify</label>
-            <textarea class="form-control" name="freetext_general" id="freetext_general"
-                      data-concept="1915^FREETEXT GENERAL^99DCT"
+            <label for="obs.regimen.other">Other Specify</label>
+            <textarea class="form-control" name="freetext_general" id="obs.regimen.other"
+                      data-concept=" "
                       placeholder="Provider notes/comments."></textarea>
         </div>
 </div>
@@ -260,11 +260,12 @@
     <label>Is Patient Pregnant</label>
 
     <div class="form-group">
-        <fieldset name="obs.tmp_drugs">
-            <input id="obs.tmp_drugs.Metformin" type="radio" name="obs.tmp_drugs" value="metformin">
-            <label for="obs.tmp_drugs.Metformin">Yes</label><br>
-            <input id="obs.tmp_drugs.Glibenclamide" type="radio" name="obs.tmp_drugs" value="glibenclamide">
-            <label for="obs.tmp_drugs.Glibenclamide">No</label><br>
+        <fieldset name="obs.pregnancystatus" data-concept="5272^PREGNANCY STATUS^99DCT">
+		
+            <input id="obs.pregnancystatus_yes" type="radio" name="obs.pregnancystatus" value="1065^YES^99DCT">
+            <label for="obs.pregnancystatus_yes">Yes</label><br>
+            <input id="obs.pregnancystatus_no" type="radio" name="obs.pregnancystatus" value="1066^NO^99DCT">
+            <label for="obs.pregnancystatus_no">No</label><br>
 			          
         </fieldset>
     </div>
